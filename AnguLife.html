@@ -193,13 +193,13 @@
 		<br>
 		<br>
 
-		<table border="1">
+		<table class="lifeBoard" border="0">
 			<tr ng-repeat="line in  lines">
-				<td ng-repeat="column in line.columns" ng-class="{'classLiving': column.living}">                    
-					<div ng-click="changeLife(column, false);" ng-show="column.living">
+				<td class="lifeSqr" ng-repeat="column in line.columns" ng-class="{'classLiving': column.living}">                    
+					<div ng-click="changeLife(column, false);" ng-show="column.living" class="live">
 						<b>:-)</b>
 					</div>
-					<div ng-click="changeLife(column, true);" ng-show="!column.living">
+					<div ng-click="changeLife(column, true);" ng-show="!column.living"  class="dead">
 						<b>:-(</b>
 					</div>
 				</td>

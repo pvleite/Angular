@@ -1,3 +1,29 @@
+
+table.lifeBoard {
+  border-radius: 8px;
+}
+
+td.lifeSqr {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 0px;
+  border: 1px solid #ccc;
+  color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+td.lifeSqr div.live {
+  background: green;
+  color: rgba(0, 0, 0, 1);
+}
+
+tr:first td.lifeSqr {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
 /* app css stylesheet */
 
 .cabeca_pra_baixo {
@@ -29,8 +55,8 @@
     padding: 0px;
     z-index: 1;
     background-color: white;
-	min-width:160px;
-	min-height:20px;
+	  min-width:160px;
+	 min-height:20px;
     border: solid 1px;
     border-color: #ddd;
     border-radius: 3px;
